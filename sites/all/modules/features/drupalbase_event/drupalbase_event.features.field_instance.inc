@@ -103,7 +103,7 @@ function drupalbase_event_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 7,
+      'weight' => 8,
     ),
   );
 
@@ -217,7 +217,7 @@ function drupalbase_event_field_default_field_instances() {
         ),
         'map' => array(
           'auto_center' => 1,
-          'base_url' => '//services.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}.png',
+          'base_url' => 'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
           'center' => array(
             'lat' => 0,
             'lng' => 0,
@@ -226,7 +226,7 @@ function drupalbase_event_field_default_field_instances() {
         ),
       ),
       'type' => 'leaflet_widget_widget',
-      'weight' => 8,
+      'weight' => 10,
     ),
   );
 
@@ -272,7 +272,64 @@ function drupalbase_event_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 1,
+      'weight' => 9,
+    ),
+  );
+
+  // Exported field_instance: 'node-drupalbase_event-field_drupalbase_media_link'
+  $field_instances['node-drupalbase_event-field_drupalbase_media_link'] = array(
+    'bundle' => 'drupalbase_event',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'link',
+        'settings' => array(),
+        'type' => 'link_default',
+        'weight' => 7,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_drupalbase_media_link',
+    'label' => 'Media Link',
+    'required' => 0,
+    'settings' => array(
+      'absolute_url' => 1,
+      'attributes' => array(
+        'class' => '',
+        'configurable_class' => 0,
+        'configurable_title' => 0,
+        'rel' => '',
+        'target' => 'default',
+        'title' => '',
+      ),
+      'display' => array(
+        'url_cutoff' => 80,
+      ),
+      'enable_tokens' => 1,
+      'rel_remove' => 'default',
+      'title' => 'none',
+      'title_label_use_field_label' => 0,
+      'title_maxlength' => 255,
+      'title_value' => '',
+      'url' => 0,
+      'user_register_form' => FALSE,
+      'validate_url' => 1,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'link',
+      'settings' => array(),
+      'type' => 'link_field',
+      'weight' => 7,
     ),
   );
 
@@ -332,6 +389,46 @@ function drupalbase_event_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-drupalbase_event-field_tags'
+  $field_instances['node-drupalbase_event-field_tags'] = array(
+    'bundle' => 'drupalbase_event',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 6,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_tags',
+    'label' => 'Tags',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'taxonomy',
+      'settings' => array(
+        'autocomplete_path' => 'taxonomy/autocomplete',
+        'size' => 60,
+      ),
+      'type' => 'taxonomy_autocomplete',
+      'weight' => 1,
+    ),
+  );
+
   // Translatables
   // Included for use with string extractors like potx.
   t('Credits');
@@ -340,6 +437,8 @@ function drupalbase_event_field_default_field_instances() {
   t('GeoLocation');
   t('Image');
   t('Location');
+  t('Media Link');
+  t('Tags');
 
   return $field_instances;
 }

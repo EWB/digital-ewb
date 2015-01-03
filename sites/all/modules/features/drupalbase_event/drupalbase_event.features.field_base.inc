@@ -10,114 +10,68 @@
 function drupalbase_event_field_default_field_bases() {
   $field_bases = array();
 
-  // Exported field_base: 'field_drupalbase_credits'
-  $field_bases['field_drupalbase_credits'] = array(
+  // Exported field_base: 'field_drupalbase_media_link'
+  $field_bases['field_drupalbase_media_link'] = array(
     'active' => 1,
     'cardinality' => -1,
     'deleted' => 0,
     'entity_types' => array(),
-    'field_name' => 'field_drupalbase_credits',
-    'foreign keys' => array(
-      'format' => array(
-        'columns' => array(
-          'format' => 'format',
-        ),
-        'table' => 'filter_format',
-      ),
-    ),
-    'indexes' => array(
-      'format' => array(
-        0 => 'format',
-      ),
-    ),
-    'locked' => 0,
-    'module' => 'text',
-    'settings' => array(
-      'max_length' => 255,
-    ),
-    'translatable' => 0,
-    'type' => 'text',
-  );
-
-  // Exported field_base: 'field_drupalbase_geolocation'
-  $field_bases['field_drupalbase_geolocation'] = array(
-    'active' => 1,
-    'cardinality' => -1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_drupalbase_geolocation',
+    'field_name' => 'field_drupalbase_media_link',
     'foreign keys' => array(),
-    'indexes' => array(
-      'bbox' => array(
-        0 => 'top',
-        1 => 'bottom',
-        2 => 'left',
-        3 => 'right',
-      ),
-      'bottom' => array(
-        0 => 'bottom',
-      ),
-      'centroid' => array(
-        0 => 'lat',
-        1 => 'lon',
-      ),
-      'geohash' => array(
-        0 => 'geohash',
-      ),
-      'lat' => array(
-        0 => 'lat',
-      ),
-      'left' => array(
-        0 => 'left',
-      ),
-      'lon' => array(
-        0 => 'lon',
-      ),
-      'right' => array(
-        0 => 'right',
-      ),
-      'top' => array(
-        0 => 'top',
-      ),
-    ),
+    'indexes' => array(),
     'locked' => 0,
-    'module' => 'geofield',
+    'module' => 'link',
     'settings' => array(
-      'backend' => 'default',
-      'srid' => 4326,
+      'attributes' => array(
+        'class' => '',
+        'rel' => '',
+        'target' => 'default',
+      ),
+      'display' => array(
+        'url_cutoff' => 80,
+      ),
+      'enable_tokens' => 1,
+      'title' => 'optional',
+      'title_maxlength' => 128,
+      'title_value' => '',
+      'url' => 0,
     ),
     'translatable' => 0,
-    'type' => 'geofield',
+    'type' => 'link_field',
   );
 
-  // Exported field_base: 'field_image'
-  $field_bases['field_image'] = array(
+  // Exported field_base: 'field_tags'
+  $field_bases['field_tags'] = array(
     'active' => 1,
-    'cardinality' => 1,
+    'cardinality' => -1,
     'deleted' => 0,
     'entity_types' => array(),
-    'field_name' => 'field_image',
+    'field_name' => 'field_tags',
     'foreign keys' => array(
-      'fid' => array(
+      'tid' => array(
         'columns' => array(
-          'fid' => 'fid',
+          'tid' => 'tid',
         ),
-        'table' => 'file_managed',
+        'table' => 'taxonomy_term_data',
       ),
     ),
     'indexes' => array(
-      'fid' => array(
-        0 => 'fid',
+      'tid' => array(
+        0 => 'tid',
       ),
     ),
     'locked' => 0,
-    'module' => 'image',
+    'module' => 'taxonomy',
     'settings' => array(
-      'default_image' => 0,
-      'uri_scheme' => 'public',
+      'allowed_values' => array(
+        0 => array(
+          'vocabulary' => 'tags',
+          'parent' => 0,
+        ),
+      ),
     ),
     'translatable' => 0,
-    'type' => 'image',
+    'type' => 'taxonomy_term_reference',
   );
 
   return $field_bases;
