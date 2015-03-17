@@ -79,7 +79,21 @@
     </div>
   </div> <!-- /#main -->
 </div> <!-- /#main-wrapper -->
-
+<div id="section-wrapper1">
+  <div id="section1" class="container"><!--section1 added by ewb-->
+    <?php print render($page['section1']); ?>
+  </div>
+</div> 
+<div id="section-wrapper2"> 
+  <div id="section2" class="container"><!--section2 added by ewb-->
+    <?php print render($page['section2']); ?>
+  </div>  
+</div>
+<div id="section-wrapper3">
+  <div id="section3" class="container"><!--section3 added by ewb-->
+    <?php print render($page['section3']); ?>
+  </div>  
+</div>
 <footer id="footer" class="footer" role="footer">
   <div class="container">
     <?php if ($copyright): ?>
