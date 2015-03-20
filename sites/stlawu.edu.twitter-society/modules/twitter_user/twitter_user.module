@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Twitter User feature.
+ */
+
+include_once 'twitter_user.features.inc';

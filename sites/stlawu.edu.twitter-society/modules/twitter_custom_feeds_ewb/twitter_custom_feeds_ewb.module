@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Twitter Custom Feeds EWB feature.
+ */
+
+include_once 'twitter_custom_feeds_ewb.features.inc';

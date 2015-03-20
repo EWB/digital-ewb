@@ -4,19 +4,3 @@ sites/*/settings*.php
 # Ignore paths that contain user-generated content.
 sites/*/files
 sites/*/private
-sites/all/modules/local
-
-#Ignore paths to multisite and symlink-related paths
-twitter-society
-sites/stlawu.edu.twitter-society/
-
-#Various and Sundry
-
-.DS_Store
-._.DS_Store
-
-adirondack-bibliography
-ksp
-twitter-society
-human-rights-researcher
-it
