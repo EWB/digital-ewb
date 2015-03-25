@@ -1,7 +1,0 @@
-<?php
-/**
- * @file
- * Code for the Tweet feature.
- */
-
-include_once 'tweet.features.inc';
