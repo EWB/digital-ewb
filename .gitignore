@@ -7,7 +7,6 @@ sites/*/private
 sites/all/modules/local
 
 #Ignore paths to multisite and symlink-related paths
-twitter-society
 sites/stlawu.edu.twitter-society/
 sites/stlawu.edu.twitter-society/*
 
