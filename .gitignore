@@ -9,6 +9,7 @@ sites/all/modules/local
 #Ignore paths to multisite and symlink-related paths
 sites/stlawu.edu.twitter-society/
 sites/stlawu.edu.twitter-society/*
+adirondack-bibliography -> /htdocs/drupal/adirondack-bibliography/docroot
 
 #Various and Sundry
 
