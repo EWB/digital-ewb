@@ -8,9 +8,9 @@ dependencies[] = views
 dependencies[] = libraries
 dependencies[] = jquery_update
 
-; Information added by Drupal.org packaging script on 2015-03-16
-version = "7.x-1.1"
+; Information added by Drupal.org packaging script on 2015-06-17
+version = "7.x-1.2"
 core = "7.x"
 project = "mixitup_views"
-datestamp = "1426504382"
+datestamp = "1434553981"
 
