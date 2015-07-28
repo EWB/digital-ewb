@@ -10,11 +10,16 @@ sites/all/modules/local
 sites/stlawu.edu.twitter-society/
 sites/stlawu.edu.twitter-society/*
 adirondack-bibliography -> /htdocs/drupal/adirondack-bibliography/docroot
+/htdocs/drupal/adirondack-bibliography/docroot
 dslc -> /htdocs/drupal/dslc/docroot/
+/htdocs/drupal/dslc/docroot
 human-rights-researcher -> /htdocs/drupal/human-rights/docroot/
+/htdocs/drupal/human-rights/docroot
 ksp -> /htdocs/drupal/ksp/docroot/
 peopleshistoryarchive -> /htdocs/drupal/peopleshistoryarchive.org/docroot/
+/htdocs/drupal/peopleshistoryarchive.org/docroot/
 twitter-society -> /htdocs/drupal/twitter-society/docroot/
+/htdocs/drupal/twitter-society/docroot/
 
 #Various and Sundry
 
