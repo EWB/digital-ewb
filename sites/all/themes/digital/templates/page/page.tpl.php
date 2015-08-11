@@ -56,8 +56,13 @@
     </nav><!-- /.navbar -->
   </div> <!-- /.container -->
 </header>
+<!-- ewb NEW location for breadcrumbs -->
+      <?php if ($breadcrumb): ?>
+        <div id="breadcrumb" class="visible-desktop">
+          <?php print $breadcrumb; ?>
+        </div>
+      <?php endif; ?>
 <!-- ewb -->
-
 <div id="featured"><!--featured added by ewb-->
 <?php print render($page['featured']); ?>
 </div>  
@@ -66,11 +71,7 @@
 <div id="main-wrapper">
   <div id="main" class="main">
     <div class="container">
-      <?php if ($breadcrumb): ?>
-        <div id="breadcrumb" class="visible-desktop">
-          <?php print $breadcrumb; ?>
-        </div>
-      <?php endif; ?>
+<!-- ewb OLD location for breadcrumbs -->
       <?php if ($messages): ?>
         <div id="messages">
           <?php print $messages; ?>
