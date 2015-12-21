@@ -5,6 +5,7 @@ sites/*/settings*.php
 sites/*/files
 sites/*/private
 sites/all/modules/local
+sites/default/modules
 
 #Ignore paths to multisite and symlink-related paths
 sites/stlawu.edu.twitter-society/
